@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <body>
+        <div class="container">
+            <div class="calculator">
+                <input id="result" onkeydown="return ( event.ctrlKey || event.altKey || (47<event.keyCode && event.keyCode<58 && event.shiftKey==false) || (95<event.keyCode && event.keyCode<106)|| (event.keyCode==8) || (event.keyCode==9) || (event.keyCode>34 && event.keyCode<40) || (event.keyCode==46) )" onkeyup="this.value=this.value.replace(/[^\d]/,'')" type="text" placeholder="0">
+                <div class="buttons">
+                    <button>+</button>
+                    <button>-</button>
+                    <button>X</button>
+                    <button>÷</button>
+                </div>
+                <div class="buttons">
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button class="equals"></button>
+                </div>
+                <div class="buttons">
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button class="equals"></button>
+                </div>
+                <div class="buttons">
+                    <button>3</button>
+                    <button>2</button>
+                    <button>1</button>
+                    <button class="equals">=</button>
+                </div>
+                <div class="buttons">
+                    <button>0</button>
+                    <button>.</button>
+                    <button id="clear">C</button>
+                    <button class="equals"></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
